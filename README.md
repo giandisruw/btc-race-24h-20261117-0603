@@ -12,6 +12,9 @@ A dip-buying bot that trades Coinbase Wrapped BTC (cbBTC) against USDC, minute b
 python3 main.py
 ```
 
+The bot reads one JSON bar per minute on stdin and answers with orders on
+stdout, per the kit's bars-replay protocol.
+
 ## Strategy
 
 The bot sits in cash almost all of the time and only buys after a sharp
